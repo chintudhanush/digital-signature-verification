@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Verification Result</title>
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(120deg,#232526,#414345);
+    font-family: Arial;
+    color:white;
+}
+
+.result{
+    padding:50px;
+    border-radius:20px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    text-align:center;
+    box-shadow:0 0 30px rgba(0,255,0,0.4);
+}
+
+button{
+    margin-top:25px;
+    padding:12px 30px;
+    border:none;
+    border-radius:25px;
+    background: linear-gradient(45deg,#00c6ff,#0072ff);
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+<div class="result">
+    <h1>{{ result }}</h1>
+
+    <!-- Back Button -->
+    <button onclick="window.history.back()">⬅ Back to verify page</button>
+</div>
+</body>
+</html>

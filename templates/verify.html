@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Verify File</title>
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#000428,#004e92);
+    font-family: Arial;
+    color:white;
+}
+
+.panel{
+    background: rgba(255,255,255,0.15);
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter: blur(12px);
+    box-shadow:0 0 30px rgba(0,200,255,0.5);
+    width:320px;
+}
+
+input{
+    margin:10px 0;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background: linear-gradient(45deg,#ffdd00,#ff8800);
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.back-btn{
+    background: linear-gradient(45deg,#00c6ff,#0072ff);
+}
+</style>
+</head>
+
+<body>
+<div class="panel">
+    <h2>🔎 Verify File & Signature</h2>
+
+    <form method="post" enctype="multipart/form-data">
+        Original File:<br>
+        <input type="file" name="file" required><br>
+
+        Signature File (.sig):<br>
+        <input type="file" name="signature" required><br>
+
+        <button type="submit">Verify</button>
+    </form>
+
+    <!-- Back Button -->
+    <button class="back-btn" onclick="window.history.back()">⬅ Back to Generate</button>
+</div>
+</body>
+</html>
